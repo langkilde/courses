@@ -29,3 +29,9 @@ object CurryTest extends App {
   println(filter(nums, modN(3)))
 }
 ```
+Useful in Scala
+* require(cond, "msg") - enforce precondition
+* assert(cond) - check that the code functions
+
+
+  
