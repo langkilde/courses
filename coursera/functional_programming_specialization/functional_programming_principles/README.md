@@ -8,8 +8,9 @@ It's good functional programming style to break down code into many small functi
 Call-by-name vs call-by-value is important to remeber for deciding on how to call a method.
 Def x = loop works but val x = loop will not work. Get Call-by-name by def function(x : => Type).
 
-*Recursion.* In Scala you always need to define the return type in order for type inference to work.
+**Recursion.** In Scala you always need to define the return type in order for type inference to work.
 Scala relies on Blocks to define scope. Blocks equal the last expression in their definition.
-*Tail recursion*. 
 
-##
+**Tail recursion.** If a function calls itself as the last action, you can reuse the function's stack frame. Use @tailrec notation to check this when you expect it to be the case.
+
+## Week 2
