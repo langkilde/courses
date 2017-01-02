@@ -14,3 +14,4 @@ Scala relies on Blocks to define scope. Blocks equal the last expression in thei
 **Tail recursion.** If a function calls itself as the last action, you can reuse the function's stack frame. Use @tailrec notation to check this when you expect it to be the case.
 
 ## Week 2
+**Higher order functions.** Allows you to pass functions 
