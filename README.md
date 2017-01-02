@@ -1,5 +1,6 @@
 # Courses
-Collection of notes from online courses. Written to allow me to quickly refresh my memory on most important things learned. And to keep track of assignments.
+Collection of notes from online courses. 
+Written to allow me to quickly refresh my memory on most important things learned, and to keep track of assignments.
 
 ## Coursera
 ### Functional Programmin in Scala Specialization
