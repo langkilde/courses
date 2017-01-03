@@ -38,3 +38,4 @@ Useful in Scala
 
 **Abstract types.** Types whose identity is not precisely known. Useful to know that ```type T <: Seq[U]``` indicates that T must be a subtype of Seq[U].
 
+**Base classes.** The direct and indirect superclasses of a class C are called base classes.
