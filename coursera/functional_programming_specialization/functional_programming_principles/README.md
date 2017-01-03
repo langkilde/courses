@@ -57,3 +57,12 @@ Traits can have function implementations. Classes can have value parameters, tra
 **Functions are treated as objects in Scala.** Functions are objects. Methods themself are not function values, but are converted automatically to the function value if used in a place where a Function type is expected.
 
 **Subtypes and supertypes.** ```S <: T``` means S is subtype of T, ```S >: T``` is a supertype of T. They can also be mixed.
+
+**Decomposition.** Type Tests and Type Casts exist but are discouraged. Instead Pattern Matching is the recommended method.
+Relies on **case classes**. Case classes will automatically have companion objects with apply methods. The nice thing about this is you can drop the new keyword. An example of pattern matching is
+```
+def eval(e : Expr) : Int = e match {
+  case Number(n) => n
+  case Sum(e1, e2) => eval(e1) + eval(e2)
+}
+```
