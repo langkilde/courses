@@ -11,7 +11,7 @@ It's good functional programming style to break down code into many small functi
 **Recursion.** In Scala you always need to define the return type in order for type inference to work.
 Scala relies on Blocks to define scope. Blocks equal the last expression in their definition.
 
-**Tail recursion.** If a function calls itself as the last action, you can reuse the function's stack frame. Use ```@tailrec``` notation to check this when you expect it to be the case.
+**Tail recursion.** If a function *calls itself as the last action*, you can reuse the function's stack frame. Use ```@tailrec``` notation to check this when you expect it to be the case.
 
 ## Week 2
 **Higher order functions.** Allows you to define functions through functions. You can define functions through anonymous functions. The type of parameters can be omitted thanks to type inference.
