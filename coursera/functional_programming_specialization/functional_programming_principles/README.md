@@ -67,3 +67,8 @@ def eval(e : Expr) : Int = e match {
 }
 ```
 Remember you can use wildcard patterns _
+
+**Lists.** Lists are immutable and recursive. Lists are constructed from the empty list ```Nil``` and the construction operation ```::``` (*cons*). ```x :: xs``` gives a new list with the first element x, followed by the elements of xs.
+
+NOTE: Operators ending in ":" are different in that they are seen as method calls of the right-hand operand.
+I.e.  ```1 :: 2``` is equivalent to ```2.::1```
