@@ -55,3 +55,5 @@ Traits can have function implementations. Classes can have value parameters, tra
 ## Week 4
 
 **Functions are treated as objects in Scala.** Functions are objects. Methods themself are not function values, but are converted automatically to the function value if used in a place where a Function type is expected.
+
+**Subtypes and supertypes.** ```S <: T``` means S is subtype of T, ```S >: T``` is a supertype of T. They can also be mixed.
