@@ -119,4 +119,4 @@ Note that ```xs flatMap f = (xs map f).flatten```.
   (1 until i) map (j => (i,j))) filter (pair => 
     isPrime(pair._1 + pair._2))
 ```
-
+For-expressions can help simplify this method. A for-expression is of the form ```for (s) yield e``` where s is a sequence of generators and filters, and e is an expression whose value is returned by an iteration.
