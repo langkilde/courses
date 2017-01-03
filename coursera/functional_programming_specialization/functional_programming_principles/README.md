@@ -51,3 +51,7 @@ Traits can have function implementations. Classes can have value parameters, tra
 **Parametric Polymorphism.** Generalize classes with type parameters. All type parameters and type arguments are removed before evaluating the program. This is called *type erasue*. This means that the runtime type of ```List[Int]``` and ```List[Boolean]```.
 
 [type basics from twitter github](https://twitter.github.io/scala_school/type-basics.html)
+
+## Week 4
+
+**Functions are treated as objects in Scala.** Functions are objects. Methods themself are not function values, but are converted automatically to the function value if used in a place where a Function type is expected.
