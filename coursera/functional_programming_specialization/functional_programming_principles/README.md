@@ -113,4 +113,10 @@ def sum(xs : List[Int]) = (xs foldLeft 0) (_ + _)
 ```flatten``` is useful to take a collection of collections and turn it into a concatenation of the collections.
 Note that ```xs flatMap f = (xs map f).flatten```.
 
-**For-expressions.** 
+**For-expressions.** Lets say we want to find all pairs of numbers such that the sum of the pair is a prime. We could do this the following way
+```Scala
+(1 until n) flatMap (i =>
+  (1 until i) map (j => (i,j))) filter (pair => 
+    isPrime(pair._1 + pair._2))
+```
+
