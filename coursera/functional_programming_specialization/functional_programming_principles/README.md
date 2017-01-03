@@ -33,5 +33,8 @@ Useful in Scala
 * require(cond, "msg") - enforce precondition
 * assert(cond) - check that the code functions
 
+## Week 3
+**Class hierarchies.** Any user-defined class extends another class. If no superclass is given the standard Object in java.lang is assumed.
 
-  
+**Abstract types.** Types whose identity is not precisely known. Useful to know that ```type T <: Seq[U]``` indicates that T must be a subtype of Seq[U].
+
