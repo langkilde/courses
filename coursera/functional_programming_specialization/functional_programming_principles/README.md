@@ -60,9 +60,10 @@ Traits can have function implementations. Classes can have value parameters, tra
 
 **Decomposition.** Type Tests and Type Casts exist but are discouraged. Instead Pattern Matching is the recommended method.
 Relies on **case classes**. Case classes will automatically have companion objects with apply methods. The nice thing about this is you can drop the new keyword. An example of pattern matching is
-```
+```Scala
 def eval(e : Expr) : Int = e match {
   case Number(n) => n
   case Sum(e1, e2) => eval(e1) + eval(e2)
 }
 ```
+Remember you can use wildcard patterns _
