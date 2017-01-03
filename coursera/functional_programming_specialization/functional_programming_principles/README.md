@@ -30,8 +30,8 @@ object CurryTest extends App {
 }
 ```
 Useful in Scala
-* require(cond, "msg") - enforce precondition
-* assert(cond) - check that the code functions
+* ```require(cond, "msg")``` - enforce precondition
+* ```assert(cond)``` - check that the code functions
 
 ## Week 3
 **Class hierarchies.** Any user-defined class extends another class. If no superclass is given the standard Object in java.lang is assumed.
