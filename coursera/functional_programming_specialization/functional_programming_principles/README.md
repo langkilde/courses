@@ -72,3 +72,16 @@ Remember you can use wildcard patterns _
 
 NOTE: Operators ending in ":" are different in that they are seen as method calls of the right-hand operand.
 I.e.  ```1 :: 2``` is equivalent to ```2.::1```
+
+## Week 5
+
+**List methods.** Length, last, init, take, drop, xs(n), xs ++ ys, reverse, xs updated (n, x), indexOf, contains, head, tail.
+
+**Pairs and Tuples.** Can be used for pattern matching. Example
+```
+def sillyExample(xs : List[Int], ys : List[Int]) = (xs, ys) match {
+  case (Nil, ys) => ys
+  case (xs, Nil) => xs
+  case _ => xs :: ys
+}
+```
