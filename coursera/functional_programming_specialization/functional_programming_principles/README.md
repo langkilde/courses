@@ -109,4 +109,8 @@ which means we can write our sum function as
 def sum(xs : List[Int]) = (xs foldLeft 0) (_ + _)
 ```
 
+## Week 6
+```flatten``` is useful to take a collection of collections and turn it into a concatenation of the collections.
+Note that ```xs flatMap f = (xs map f).flatten```.
 
+**For-expressions.** 
