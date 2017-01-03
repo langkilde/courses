@@ -49,4 +49,5 @@ class Square extends Shape with planar with Movable
 Traits can have function implementations. Classes can have value parameters, traits cannot.
 
 **Parametric Polymorphism.** Generalize classes with type parameters. All type parameters and type arguments are removed before evaluating the program. This is called *type erasue*. This means that the runtime type of ```List[Int]``` and ```List[Boolean]```.
-[type basics](https://twitter.github.io/scala_school/type-basics.html)
+
+[type basics from twitter github](https://twitter.github.io/scala_school/type-basics.html)
