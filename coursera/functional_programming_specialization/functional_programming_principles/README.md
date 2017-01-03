@@ -85,3 +85,6 @@ def sillyExample(xs : List[Int], ys : List[Int]) = (xs, ys) match {
   case _ => xs :: ys
 }
 ```
+**Implicit parameters.** If you write an implicit parameter the compiler will figure out the right argument to pass based on the required type. If it can't it's an error.
+
+**Higher order functions of lists.** Lots available such as map, filter, span etc.
