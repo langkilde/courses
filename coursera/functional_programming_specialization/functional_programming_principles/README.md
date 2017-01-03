@@ -78,7 +78,7 @@ I.e.  ```1 :: 2``` is equivalent to ```2.::1```
 **List methods.** Length, last, init, take, drop, xs(n), xs ++ ys, reverse, xs updated (n, x), indexOf, contains, head, tail.
 
 **Pairs and Tuples.** Can be used for pattern matching. Example
-```
+```Scala
 def sillyExample(xs : List[Int], ys : List[Int]) = (xs, ys) match {
   case (Nil, ys) => ys
   case (xs, Nil) => xs
@@ -100,4 +100,13 @@ We can generalize this pattern by using for example ```reduceLeft``` like this
 ```Scala
 def sum(xs : List[Int]) = (0 :: xs) reduceLeft ((x, y) => x + y)
 ```
+foldLeft is like reduceLeft but taakes an accumulator z. General structure is
+```Scala
+(List(x1, ..., xn) foldLeft z)(op) = (...(z op x1) op ...) op xn
+```
+which means we can write our sum function as
+```Scala
+def sum(xs : List[Int]) = (xs foldLeft 0) (_ + _)
+```
+
 
