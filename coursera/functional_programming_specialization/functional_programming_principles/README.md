@@ -17,7 +17,7 @@ Scala relies on Blocks to define scope. Blocks equal the last expression in thei
 **Higher order functions.** Allows you to define functions through functions. You can define functions through anonymous functions. The type of parameters can be omitted thanks to type inference.
 
 **Currying.** A way to express higher order functions using less code. Example
-```
+```Scala
 object CurryTest extends App {
   def filter(xs: List[Int], p: Int => Boolean): List[Int] =
     if (xs.isEmpty) xs
