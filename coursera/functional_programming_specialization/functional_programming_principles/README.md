@@ -88,3 +88,16 @@ def sillyExample(xs : List[Int], ys : List[Int]) = (xs, ys) match {
 **Implicit parameters.** If you write an implicit parameter the compiler will figure out the right argument to pass based on the required type. If it can't it's an error.
 
 **Higher order functions of lists.** Lots available such as map, filter, span etc.
+
+**Fold and reduce operators.** Lets say you want to make a sum of a list. This can be done recursively.
+```Scala
+def sum(l : List[Int]) : Int = l match {
+  case Nil => 0
+  case x :: xs => x + sum(xs)
+}
+```
+We can generalize this pattern by using for example ```reduceLeft``` like this
+```Scala
+def sum(xs : List[Int]) = (0 :: xs) reduceLeft ((x, y) => x + y)
+```
+
