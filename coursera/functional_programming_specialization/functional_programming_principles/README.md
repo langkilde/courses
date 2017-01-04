@@ -40,7 +40,7 @@ Useful in Scala
 
 **Base classes.** The direct and indirect superclasses of a class C are called base classes.
 
-**Dynamic method dispacth.** The code invoked by a method call depends on the runtime type of the object that contains the method.
+**Dynamic method dispatch.** The code invoked by a method call depends on the runtime type of the object that contains the method.
 
 **Trait.** In Scala (and Java) a class can only have *one* supertype (single inheritance). A trait is declared like an abstract class, just with the trait instead of the abstract class. A class can inhertice from arbitrarily many traits.
 ```Scala
