@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/langkilde/projects/recfun/project/}recfun-build...
+[info] Updating {file:/Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/}recfun-build...
 [debug] :: resolving dependencies :: default#recfun-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -2817,19 +2817,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.9!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1983ms :: artifacts dl 86ms
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT compile produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-compile.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT runtime produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-runtime.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT test produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-test.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT provided produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-provided.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT optional produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-optional.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT compile-internal produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-compile-internal.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT runtime-internal produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-runtime-internal.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT test-internal produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-test-internal.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT plugin produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-plugin.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT sources produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-sources.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT docs produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-docs.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT pom produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-pom.xml
-[debug] 	report for default#recfun-build;0.1-SNAPSHOT scala-tool produced in /Users/langkilde/projects/recfun/project/target/resolution-cache/reports/default-recfun-build-scala-tool.xml
-[debug] 	resolve done (1983ms resolve - 86ms download)
+[debug] :: resolution report :: resolve 1983ms :: artifacts dl 133ms
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT compile produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-compile.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT runtime produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-runtime.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT test produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-test.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT provided produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-provided.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT optional produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-optional.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT compile-internal produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-compile-internal.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT runtime-internal produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-runtime-internal.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT test-internal produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-test-internal.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT plugin produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-plugin.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT sources produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-sources.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT docs produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-docs.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT pom produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-pom.xml
+[debug] 	report for default#recfun-build;0.1-SNAPSHOT scala-tool produced in /Users/langkilde/projects/courses/coursera/functional_programming_specialization/functional_programming_principles/assignments/recfun/project/target/resolution-cache/reports/default-recfun-build-scala-tool.xml
+[debug] 	resolve done (1983ms resolve - 133ms download)
 [info] Done updating.
