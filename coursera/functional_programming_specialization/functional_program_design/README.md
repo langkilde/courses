@@ -18,5 +18,8 @@ m flatMap unit == m
 ```
 Lists, Set, Option, Generator are monads.
 
-*Why are monads useful to know about?*
-W-I-P...
+## Week 2
+
+You can do induction on trees.
+
+**Streams.** Like lists but tail is only evaluated on demand.
