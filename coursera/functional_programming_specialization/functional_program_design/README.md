@@ -31,3 +31,6 @@ but is seriously inefficient. This is a case where streams are useful.  Transfor
 ```Scala
 ((1000 to 10000).toStream filter isPrime)(1)
 ```
+The above solution introduces another problem. Multiple calls results in recomputation. The solution to this is lazy evaluation.
+
+**Lazy evaluation.** ```lazy val x = expr```. 
