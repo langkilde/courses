@@ -7,3 +7,5 @@
 for (x <- e1) yield e2
 e1.map(x => e2)
 ```
+
+**Functional Random Generators.**
