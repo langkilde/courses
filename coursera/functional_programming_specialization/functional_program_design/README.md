@@ -8,4 +8,6 @@ for (x <- e1) yield e2
 e1.map(x => e2)
 ```
 
-**Functional Random Generators.**
+**Generators.** Useful to build random generators for testing. Can generate complicated data structures.
+
+**Monads.** A monad is a very general type of data structure. It has two operations: ```flatMap``` and ```unit``` that satisfy some required laws. Lists, Set, Option, Generator are monads.
