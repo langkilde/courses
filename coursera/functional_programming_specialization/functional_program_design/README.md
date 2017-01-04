@@ -23,3 +23,11 @@ Lists, Set, Option, Generator are monads.
 You can do induction on trees.
 
 **Streams.** Like lists but tail is only evaluated on demand.
+Take for example the task of finding the second prime in a sequence. This could be done like this
+```Scala
+((1000 to 10000) filter isPrime)(1)
+```
+but is seriously inefficient. This is a case where streams are useful.  Transformation to stream is simple.
+```Scala
+((1000 to 10000).toStream filter isPrime)(1)
+```
