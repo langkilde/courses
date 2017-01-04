@@ -10,11 +10,13 @@ e1.map(x => e2)
 
 **Generators.** Useful to build random generators for testing. Can generate complicated data structures.
 
-**Monads.** A monad is a very general type of data structure. It has two operations: ```flatMap``` and ```unit``` that satisfy some required laws. These laws are associativity, left unit and right unit. Lists, Set, Option, Generator are monads.
+**Monads.** A monad is a very general type of data structure. It has two operations: ```flatMap``` and ```unit``` that satisfy some required laws. These laws are associativity, left unit and right unit. 
 ```Scala
 m flatMap f flatMap g == m flatMap (( x => f(x) flatMap g))
 unit(x) flatMap f == f(x)
 m flatMap unit == m
 ```
+Lists, Set, Option, Generator are monads.
 
-*Why are monads useful?*
+*Why are monads useful to know about?*
+W-I-P...
