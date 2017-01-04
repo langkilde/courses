@@ -33,4 +33,8 @@ but is seriously inefficient. This is a case where streams are useful.  Transfor
 ```
 The above solution introduces another problem. Multiple calls results in recomputation. The solution to this is lazy evaluation.
 
-**Lazy evaluation.** ```lazy val x = expr```. 
+**Lazy evaluation.** ```lazy val x = expr```. Defers computation until value or variable is needed.
+
+**Infinite data.** Lazy evaluation allows working on infinite data without worrying about termination criteria (as much). 
+
+**Designing functional programs.** An example is explored which is based on a set of states, moves that can change states, generator of moves, paths of moves, state exploration and finally solution selection of generated paths.
