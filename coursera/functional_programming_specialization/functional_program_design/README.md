@@ -43,7 +43,7 @@ The above solution introduces another problem. Multiple calls results in recompu
 Design game with intial state S, and target end state T. Find shortest path from S to T.
 *Depth-first vs breadth-first search.* Most important lesson is to build all the components at a low level and then let the solution flow from the components.
 
-## Example of using Stream
+### Example of using Stream
 Lets say you want the N first numbers of the Fibonacci sequence. Then you could define a function
 
 ```Scala
