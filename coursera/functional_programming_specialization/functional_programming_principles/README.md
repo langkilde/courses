@@ -5,7 +5,7 @@
 Functions can therefor be passed around like arguments, returned from functions etc.
 It's good functional programming style to break down code into many small functions.
 
-**Call-by-name vs call-by-value** is important to remeber for deciding on how to call a method.
+**Call-by-name vs call-by-value** is important to remember for deciding on how to call a method.
 ```Def x = loop``` works but ```val x = loop``` will not work. Get Call-by-name by ```def function(x : => Type)```
 
 **Recursion.** In Scala you always need to define the return type in order for type inference to work.
@@ -40,7 +40,7 @@ Useful in Scala
 
 **Base classes.** The direct and indirect superclasses of a class C are called base classes.
 
-**Dynamic method dispacth.** The code invoked by a method call depends on the runtime type of the object that contains the method.
+**Dynamic method dispatch.** The code invoked by a method call depends on the runtime type of the object that contains the method.
 
 **Trait.** In Scala (and Java) a class can only have *one* supertype (single inheritance). A trait is declared like an abstract class, just with the trait instead of the abstract class. A class can inhertice from arbitrarily many traits.
 ```Scala

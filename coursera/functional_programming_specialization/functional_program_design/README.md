@@ -31,3 +31,14 @@ but is seriously inefficient. This is a case where streams are useful.  Transfor
 ```Scala
 ((1000 to 10000).toStream filter isPrime)(1)
 ```
+The above solution introduces another problem. Multiple calls results in recomputation. The solution to this is lazy evaluation.
+
+**Lazy evaluation.** ```lazy val x = expr```. Defers computation until value or variable is needed.
+
+**Infinite data.** Lazy evaluation allows working on infinite data without worrying about termination criteria (as much). 
+
+**Designing functional programs.** An example is explored which is based on a set of states, moves that can change states, generator of moves, paths of moves, state exploration and finally solution selection of generated paths.
+
+### Assignment Bloxorz
+Design game with intial state S, and target end state T. Find shortest path from S to T.
+*Depth-first vs breadth-first search.* Most important lesson is to build all the components at a low level and then let the solution flow from the components.
