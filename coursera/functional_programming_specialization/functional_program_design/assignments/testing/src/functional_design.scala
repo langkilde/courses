@@ -19,7 +19,11 @@ object functional_design {
       def z = { print("z"); 3}
       z + y + x + z + y + x
     }
-    print(expr)
+
+
+    def from(n : Int) : Stream[Int] = n #:: from(n + 1)
+
+
 
   }
 
