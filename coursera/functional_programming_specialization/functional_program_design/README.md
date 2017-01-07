@@ -1,6 +1,6 @@
 #Course summary
 
-## Week 1
+## Week 1 - Higher order functions
 
 **Relation between for-expressions and database queries.** For-expressions are closely related to map, flatMap and filter. The Scala compiler actually compiles for-expressions into high-order functions. Example
 ```Scala
@@ -18,7 +18,7 @@ m flatMap unit == m
 ```
 Lists, Set, Option, Generator are monads.
 
-## Week 2
+## Week 2 - Lazy evaluation
 
 You can do induction on trees.
 
@@ -62,3 +62,11 @@ We can make sure we get the actual first 7 values
 scala> fibs.toList
 res: List[Int] = List(1, 1, 2, 3, 5, 8, 11)
 ```
+
+## Week 3 - Function and State
+
+An object has a state if its behaviour is influenced by its history. Mutable objects declared as ```var a = 5```.
+
+Scala supports the ```while``` loop, but while is not necessary and instead could be described as functions.
+
+Classical ```for``` loop can *not* be modeled by higher-order function. ```forEach``` is a building block for the same behaviour.
