@@ -22,7 +22,7 @@ Lists, Set, Option, Generator are monads.
 
 You can do induction on trees.
 
-**Streams.** Like lists but tail is only evaluated on demand.
+**Streams.** Like lists but tail is only evaluated on demand. This means that they can be innfinitely long.
 Take for example the task of finding the second prime in a sequence. This could be done like this
 ```Scala
 ((1000 to 10000) filter isPrime)(1)
@@ -42,3 +42,23 @@ The above solution introduces another problem. Multiple calls results in recompu
 ### Assignment Bloxorz
 Design game with intial state S, and target end state T. Find shortest path from S to T.
 *Depth-first vs breadth-first search.* Most important lesson is to build all the components at a low level and then let the solution flow from the components.
+
+## Example of using Stream
+Lets say you want the N first numbers of the Fibonacci sequence. Then you could define a function
+
+```Scala
+def fib(a : Int, b : Int) : Stream[Int] = a #:: fib(b, a + b)
+```
+if we then ask for
+```Scala
+scala> val fibs = fib(1,1).take(7)
+```
+we get
+```Scala
+fibs : scala.collection.immutable.Stream[Int] = Stream(1, ?)
+```
+We can make sure we get the actual first 7 values
+```Scala
+scala> fibs.toList
+res: List[Int] = List(1, 1, 2, 3, 5, 8, 11)
+```
