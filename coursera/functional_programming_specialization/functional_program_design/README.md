@@ -75,4 +75,3 @@ States are useful as they allow for powerful designs, but we lose referential tr
 
 ### Assignment Quickcheck
 
-
