@@ -70,3 +70,9 @@ An object has a state if its behaviour is influenced by its history. Mutable obj
 Scala supports the ```while``` loop, but while is not necessary and instead could be described as functions.
 
 Classical ```for``` loop can *not* be modeled by higher-order function. ```forEach``` is a building block for the same behaviour.
+
+States are useful as they allow for powerful designs, but we lose referential transparency.
+
+### Assignment Quickcheck
+
+
