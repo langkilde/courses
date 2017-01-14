@@ -80,3 +80,6 @@ The key takeaway from the assignement is the power of generator-driven property 
 [Here's a link to a useful resource](http://www.scalatest.org/user_guide/generator_driven_property_checks)
 
 The idea is to build a simple generator and then define a set of properties that need to be satisfied by the data generated.
+
+## Week 4 - Timely Effects
+
