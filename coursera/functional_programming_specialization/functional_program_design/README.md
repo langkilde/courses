@@ -87,6 +87,7 @@ A classic pattern for event handling is the Observer pattern. One example of thi
 - it decouples views from states
 - you can have as many views of a state as you want
 - simple to set up
+
 Bad things are that
 - forces imperative style
 - requires coordination of lots of moving parts
@@ -97,10 +98,25 @@ Bad things are that
 In order to improve the situation Functional Reactive Programming is introduced. A key concept to FRP is Signals.
 
 ## Signal Operations
-Signals have two fundamental operations
+Values of type Signal are immutable. Signals have two fundamental operations
 
 1. Obtain the value of the signal at the current time.
 
 2. Define a signal in terms of other signals.
 
-You can 
+There's also Variable Signals ```Var()``` that implement the ```update()``` operation. 
+
+Each signal maintains three things
+- current value
+- expression that defines the signal value
+- set of observer signals
+
+Implementing Signals requires a data structure accessed like a stack since signals depend on each other in a specific order.
+
+Signals change value when
+- update is called on a Var
+- the value of a dependent signal changes
+
+Important issue is how to deal with parallell signal calls. One solution is to use Thread-Local State through the API of DynamicVariable. The state is then global to the thread, but each thread then accesses it's own copy of the state.
+
+A cleaner solution involves implicit paramters. instead of maintaining a thread-local variable, we pass its current value into a signal expression as an implicit parameter.
