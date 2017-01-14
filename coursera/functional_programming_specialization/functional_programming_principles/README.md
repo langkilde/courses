@@ -8,6 +8,10 @@ It's good functional programming style to break down code into many small functi
 **Call-by-name vs call-by-value** is important to remember for deciding on how to call a method.
 ```Def x = loop``` works but ```val x = loop``` will not work. Get Call-by-name by ```def function(x : => Type)```
 
+**Call by value**: evaluates the function arguments before calling the function
+
+**Call by name**: evaluates the function first, and then evaluates the arguments if need be
+
 **Recursion.** In Scala you always need to define the return type in order for type inference to work.
 Scala relies on Blocks to define scope. Blocks equal the last expression in their definition.
 
@@ -127,3 +131,5 @@ for {
   if isPrime(i + j)
 } yield (i,j)
 ```
+
+Check out this great cheat sheet for more https://github.com/lampepfl/progfun-wiki/blob/gh-pages/CheatSheet.md
