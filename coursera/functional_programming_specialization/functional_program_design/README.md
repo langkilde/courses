@@ -128,6 +128,7 @@ Programs have to deal with latencies. A common way to deal with latency is to ha
 An important building block is ```Future[T]```.
 ```Scala
 trait Future[T] {
-  def onComplete(callback : Try[T] => Unit)(implicit exector : ExecutionContext) : Unit
+  def onComplete(callback : Try[T] => Unit)
+        (implicit exector : ExecutionContext) : Unit
 }
 ```
