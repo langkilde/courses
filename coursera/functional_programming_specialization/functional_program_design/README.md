@@ -123,7 +123,7 @@ A cleaner solution involves implicit paramters. instead of maintaining a thread-
 
 ### Latency
 
-Programs have to deal with latencies. A common way to deal with latency is to have callback functions. With callbacks you basically send a request to a method along with a return adress for the resulting value.
+Programs have to deal with latency. Never block your code, always work asynchronously. A common way to deal with latency is to have callback functions. With callbacks you basically send a request to a method along with a return adress for the resulting value.
 
 An important building block is ```Future[T]```.
 ```Scala
