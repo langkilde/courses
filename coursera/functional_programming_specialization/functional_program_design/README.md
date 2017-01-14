@@ -132,3 +132,10 @@ trait Future[T] {
         (implicit exector : ExecutionContext) : Unit
 }
 ```
+A ```Future[T]``` has an apply method
+```Scala
+object Future {
+  def apply(body : => T)
+    (implicit context : ExecutionContext) : Future[T]
+}
+```
