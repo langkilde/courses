@@ -139,3 +139,4 @@ object Future {
     (implicit context : ExecutionContext) : Future[T]
 }
 ```
+Futures have a set of higher order functions defined on them. This can be used to simplify code.
