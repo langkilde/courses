@@ -83,3 +83,21 @@ The idea is to build a simple generator and then define a set of properties that
 
 ## Week 4 - Timely Effects
 
+A classic pattern for event handling is the Observer pattern. One example of this is publish/subscribe. Good things about the observer pattern are that 
+- it decouples views from states
+- you can have as many views of a state as you want
+- simple to set up
+Bad things are that
+- forces imperative style
+- requires coordination of lots of moving parts
+- view updates happen immediately
+- concurrency would make things more complicated
+- higher than usual bug rate common
+
+In order to improve the situation Functional Reactive Programming is introduced. A key concept to FRP is Signals.
+
+## Signal Operations
+Signals have two fundamental operations
+1. Obtain the value of the signal at the current time.
+
+2. Define a signal in terms of other signals.
