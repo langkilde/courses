@@ -98,6 +98,9 @@ In order to improve the situation Functional Reactive Programming is introduced.
 
 ## Signal Operations
 Signals have two fundamental operations
+
 1. Obtain the value of the signal at the current time.
 
 2. Define a signal in terms of other signals.
+
+You can 
