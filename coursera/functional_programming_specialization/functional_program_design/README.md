@@ -97,7 +97,7 @@ Bad things are that
 
 In order to improve the situation Functional Reactive Programming is introduced. A key concept to FRP is Signals.
 
-## Signals
+### Signals
 Values of type Signal are immutable. Signals have two fundamental operations
 
 1. Obtain the value of the signal at the current time.
