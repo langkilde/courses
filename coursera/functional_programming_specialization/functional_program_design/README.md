@@ -97,7 +97,7 @@ Bad things are that
 
 In order to improve the situation Functional Reactive Programming is introduced. A key concept to FRP is Signals.
 
-## Signal Operations
+### Signals
 Values of type Signal are immutable. Signals have two fundamental operations
 
 1. Obtain the value of the signal at the current time.
@@ -120,3 +120,23 @@ Signals change value when
 Important issue is how to deal with parallell signal calls. One solution is to use Thread-Local State through the API of DynamicVariable. The state is then global to the thread, but each thread then accesses it's own copy of the state.
 
 A cleaner solution involves implicit paramters. instead of maintaining a thread-local variable, we pass its current value into a signal expression as an implicit parameter.
+
+### Latency
+
+Programs have to deal with latency. Never block your code, always work asynchronously. A common way to deal with latency is to have callback functions. With callbacks you basically send a request to a method along with a return adress for the resulting value.
+
+An important building block is ```Future[T]```.
+```Scala
+trait Future[T] {
+  def onComplete(callback : Try[T] => Unit)
+        (implicit exector : ExecutionContext) : Unit
+}
+```
+A ```Future[T]``` has an apply method
+```Scala
+object Future {
+  def apply(body : => T)
+    (implicit context : ExecutionContext) : Future[T]
+}
+```
+Futures have a set of higher order functions defined on them. This can be used to simplify code.
