@@ -10,11 +10,13 @@ import Math._
 
 abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
 
+  // Generator for general heap
   lazy val genHeap: Gen[H] = for {
     n <- arbitrary[A]
     h <- frequency((1, empty), (9, genHeap))
   } yield insert(n, h)
 
+  // Generator for arbitrary heap
   implicit lazy val arbHeap: Arbitrary[H] = Arbitrary(genHeap)
 
   property("findMin") = forAll { (n1: A, n2: A) =>
