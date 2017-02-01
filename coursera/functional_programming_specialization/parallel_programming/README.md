@@ -20,3 +20,15 @@ We call an operation *atomic* if it appears as if it occured instantaneously fro
 Synchronization primitives such as ```synchronized``` allow threads to agree on unique values.
 
 **Deadlock** is a scenario in which two or more threads compete for resources and wait for each other to finish without releasing the already acquired resource.
+
+Parallelism requires we call methods by name, not by value. Recursion is a powerful construction when performing parallel computations.
+
+```parallel``` and ```tasks``` are two constructs for parallel computations.
+
+### Performance Estimation
+
+We could use different methods to estimate performance of a computations, such as
+
+- Empirical Measurement
+- Asymptotic Analysis
+
