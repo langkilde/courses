@@ -32,3 +32,4 @@ We could use different methods to estimate performance of a computations, such a
 - Empirical Measurement
 - Asymptotic Analysis
 
+#### Asymptotic analysis
